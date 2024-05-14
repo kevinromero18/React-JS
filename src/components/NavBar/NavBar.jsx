@@ -1,14 +1,16 @@
 import CartWidget from "../CartWidget/CartWidget";
-import './NavBar.css'
+import classes from "./NavBar.module.css";
 
 const NavBar = () => {
     return (
-        <nav className="nav">
-            <h2>ZAPASPORT</h2>
-            <div>
-                <button>ADIDAS</button>
-                <button>NIKE</button>
-                <button>PUMA</button>
+        <nav className={classes.nav}>
+            <div className={classes.logo}>
+                <h1>ZAPASPORT</h1>
+            </div>
+            <div className={classes.container}>
+                <button className={classes.button}>ADIDAS</button>
+                <button className={classes.button}>NIKE</button>
+                <button className={classes.button}>PUMA</button>
             </div>
             <CartWidget />
         </nav>

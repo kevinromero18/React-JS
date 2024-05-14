@@ -1,0 +1,8 @@
+.greet {
+    font-size: 2em;
+    color: #ededed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+};

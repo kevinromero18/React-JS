@@ -1,11 +1,23 @@
-import './ItemListContainer.css'
-// eslint-disable-next-line react/prop-types
-const ItemListContainer = ({ greeting }) => {
+/* eslint-disable react/prop-types */
+import { useState, useEffect } from 'react';
+import classes from "./ItemListContainer.module.css";
+import { getProducts } from '../../asyncMock';
+import ItemList from "../ItemList/ItemList";
+
+const ItemListContainer = ({greeting}) => {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        getProducts()
+            .then(res => {setProducts(res)})
+            .catch(e => {console.error(e)})
+    }, [])
     return (
         <div>
-            <h1 className="title"> { greeting } </h1>
+            <h2 className={classes.greet}>{greeting}</h2>
+            <ItemList products = {products} />
         </div>
-    )
+    );
 };
 
 export default ItemListContainer;

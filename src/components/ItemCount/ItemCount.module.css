@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2.5em 2em 2.5em;
+}
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.counter {
+    color: #ededed;
+}
+.button {
+    border: none;
+    background-color: #081b29;
+    color: #ededed;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 0.2em;
+    height: 1.5em;
+    width: 1.5em;
+}
+.button:hover {
+    background-color: #112e42;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}

@@ -1,0 +1,24 @@
+.cart {
+    width: 2em;
+    height: 2em;
+    color: #ededed;
+    font-size: 1em;
+    margin: auto;
+}
+.container {
+    width: 3.5em;
+    height: 3.5em;
+    display: flex;
+    border-radius: 50%;
+}
+.container:hover {
+    background-color: #112e42;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+.count {
+    color: #ededed;
+    position: relative;
+    bottom: -1.7em;
+    left: -.5em;
+}
