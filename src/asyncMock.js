@@ -89,3 +89,10 @@ export const getProductById = (productId) => {
     });
 };
 
+export const getProductsByCategory = (categoryId) => {
+    return new Promise ((resolve) => {
+        setTimeout(() => {
+            resolve(products.filter(producto => producto.category === categoryId))
+        }, 700)
+    });
+};

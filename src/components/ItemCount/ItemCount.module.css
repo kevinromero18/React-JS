@@ -29,3 +29,18 @@
     cursor: pointer;
     transition: all 0.7s ease;
 }
+.buttonn {
+    border: none;
+    background-color: #081b29;
+    color: #ededed;
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    height: 2.5em;
+    width: 8em;
+    margin-top: 0.5em;
+}
+.buttonn:hover {
+    background-color: #112e42;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}

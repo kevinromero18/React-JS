@@ -24,3 +24,19 @@
     margin: 0.2em;
     font-size: 1.2em;
 }
+.cart {
+    border: none;
+    background-color: #081b29;
+    color: #ededed;
+    font-size: 1.6em;
+    border-radius: 0.1em;
+    height: 3em;
+    padding: 0.3em 0;
+    width: 8em;
+    text-decoration: none;
+}
+.cart:hover {
+    background-color: #112e42;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}

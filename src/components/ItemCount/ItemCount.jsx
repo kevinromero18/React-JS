@@ -4,7 +4,7 @@ import classes from './ItemCount.module.css'
 ;
 
 
-const ItemCount = ({initial = 1, stock = 10}) => {
+const ItemCount = ({initial = 1, stock = 10, onAdd}) => {
     const [ count, setCount ] = useState(initial);
 
     const increment = () => {
@@ -24,6 +24,7 @@ const ItemCount = ({initial = 1, stock = 10}) => {
         </div>
         <div className={classes.controls}>
             <button className={classes.button} onClick={increment}>+</button>
+            <button className={classes.buttonn} onClick={() => onAdd(count)} disabled = {!stock}>Agregar al Carrito</button>
             <button className={classes.button} onClick={decrement}>-</button>
         </div>
     </div>

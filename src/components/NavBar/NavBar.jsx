@@ -1,16 +1,17 @@
 import CartWidget from "../CartWidget/CartWidget";
 import classes from "./NavBar.module.css";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
     return (
         <nav className={classes.nav}>
-            <div className={classes.logo}>
-                <h1>ZAPASPORT</h1>
-            </div>
+            <Link to={`/ `} className={classes.logo}>
+                <h1>ZapaSport</h1>
+            </Link>
             <div className={classes.container}>
-                <button className={classes.button}>ADIDAS</button>
-                <button className={classes.button}>NIKE</button>
-                <button className={classes.button}>PUMA</button>
+                <NavLink to={`/category/Nike`} className={classes.button}>Nike</NavLink>
+                <NavLink to={`/category/Adidas`} className={classes.button}>Adidas</NavLink>
+                <NavLink to={`/category/Puma`} className={classes.button}>Puma</NavLink>
             </div>
             <CartWidget />
         </nav>
